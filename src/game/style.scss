@@ -1,0 +1,45 @@
+.game {
+  height: 30vh;
+  width: 30vh;
+  display: flex; /* establish flex container */
+  flex-wrap: wrap; /* enable flex items to wrap */
+  justify-content: space-around;
+
+  .box {
+    cursor: pointer;
+    flex: 0 0 32%; /* don't grow, don't shrink, width */
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    border: 1px solid transparent;
+    margin-bottom: 2px;
+    background-color: rgb(201, 201, 201);
+    &:hover {
+      font-size: 3.1em;
+      background-color: #f1f6fa;
+      transition: all 0.3s ease-in;
+      border: 1px solid blue;
+    }
+  }
+}
+button {
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em gray;
+  cursor: pointer;
+}
