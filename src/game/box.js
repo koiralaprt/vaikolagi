@@ -9,7 +9,7 @@ export default function Box(props) {
       style={{ color: value === "X" ? "red" : "green" }}
     >
       {value || ""}
-      <span
+      {/* <span
         style={{
           top: "5px",
           left: "5px",
@@ -17,7 +17,7 @@ export default function Box(props) {
         }}
       >
         {position}
-      </span>
+      </span> */}
     </div>
   );
 }

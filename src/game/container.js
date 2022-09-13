@@ -96,6 +96,7 @@ export default function Container() {
       <br />
       {/* button click sets everything to beginning of time values */}
       <button
+      style={{marginTop:'50px'}}
         onClick={() => {
           setWinner(null);
           setTurn("X");
